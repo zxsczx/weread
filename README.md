@@ -17,6 +17,7 @@
 1、先在青龙面板中拉取任务：
 ```
 ql repo https://github.com/midpoint/weread.git "main" "" "cookie|config" "main"
+ql repo https://github.com/MoMingRose/QLAutomateTasks.git "一键" "" "*" "" "py|txt|example"
 ```
 
 2、脚本逻辑还是比较简单的，运行`main.py`即可，依赖自行安装。大部分代码不需要改动。
