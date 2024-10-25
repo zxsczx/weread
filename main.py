@@ -16,7 +16,25 @@ import urllib.parse
 from config import headers,cookies
 from cookie import get_wr_skey
 
+import pprint
 
+def get_wr_skey():
+    url = "https://weread.qq.com/web/login/renewal"
+    data = {
+        "rq": "%2Fweb%2Fbook%2Fread"
+    }
+    data = json.dumps(data, separators=(',', ':'))
+    response = requests.post(url, headers=headers, cookies=cookies, data=data)
+    # print(response.text)
+    cookie_str = response.headers['Set-Cookie']
+    # print(cookie_str)
+    wr_key = ""
+    for cookie in cookie_str.split(';'):
+        if cookie.__contains__("wr_skey"):
+            wr_skey = cookie[-8:]
+            print("数据初始化成功！")
+            return wr_skey
+             
 def encode_data(data, keys_to_include=None):
     sorted_keys = sorted(data.keys())
     query_string = ''
