@@ -21,7 +21,7 @@ ql repo https://github.com/midpoint/weread.git "main" "" "" "main"  "py"
 
 2、脚本逻辑还是比较简单的，运行`main.py`即可，依赖自行安装。大部分代码不需要改动。
 
-先自行获取heads和cookies信息，更新config.py中的信息：
+先自行获取heads和cookies信息，更新main.py中的信息：
 在微信阅读官网 [微信读书 (qq.com)](https://weread.qq.com/) 搜索【三体】点开阅读点击下一页进行抓包，抓到`read`接口 `https://weread.qq.com/web/book/read`，如果返回格式正常（如：
 
 ```
