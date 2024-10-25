@@ -16,7 +16,7 @@
 
 1、先在青龙面板中拉取任务：
 ```
-ql repo https://github.com/midpoint/weread.git "jd_" "" "cookie|config" "master"
+ql repo https://github.com/midpoint/weread.git "jd_" "" "cookie|config" "main"
 ```
 
 2、脚本逻辑还是比较简单的，运行`main.py`即可，依赖自行安装。大部分代码不需要改动。
