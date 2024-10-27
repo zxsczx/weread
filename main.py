@@ -1,6 +1,6 @@
 '''
 定时自定义
-2 8 * * * main.py
+2 8,12,19 * * * main.py
 new Env('微信读书时长');
 '''# 
 #  微信读书
@@ -14,6 +14,7 @@ import hashlib
 import urllib.parse
 import pprint
 
+# 如果登录过期，更新下面的cookies和heads部分即可
 cookies = {
     'pgv_pvid': '5940625535',
     'ptcz': '1e0f97fd22d3d1e3f650330bddd5b24faf5b89dd151bc6f19fd3adfe3aa2113a',
@@ -66,6 +67,23 @@ headers = {
     'sentry-trace': '76c3d75d61254263bfbb7bf38e361345-ae7835662d87d403',
 }
 
+# 这是读的书籍信息，挑一本你读过的书
+data = {
+    "appId": "wb182564874663h1736463455",
+    "b": "609427c3643425f425a36314a4531484244764f36726936744436416b3158691e4",
+    "c": "c81322c012c81e728d9d180",
+    "ci": 2,
+    "co": 643,
+    "sm": "图书在版编目（CIP）数据我与地坛／史铁",
+    "pr": 0,
+    "rt": 9,
+    "ts": 1729840344377,
+    "rn": 902,
+    "sg": "10a63e47c3a337c129375854161f639d89f50f98999bdfcdd78d72b2807a5cdf",
+    "ct": 1729840344,
+    "ps": "f8732c107a4f86e1g013d29",
+    "pc": "25a324107a4f86e1g014dd4",
+}
 
 def get_wr_skey():
     url = "https://weread.qq.com/web/login/renewal"
@@ -116,22 +134,7 @@ def cal_hash(input_string):
 
 url = "https://weread.qq.com/web/book/read"
 
-data = {
-    "appId": "wb182564874663h1736463455",
-    "b": "609427c3643425f425a36314a4531484244764f36726936744436416b3158691e4",
-    "c": "c81322c012c81e728d9d180",
-    "ci": 2,
-    "co": 643,
-    "sm": "图书在版编目（CIP）数据我与地坛／史铁",
-    "pr": 0,
-    "rt": 9,
-    "ts": 1729840344377,
-    "rn": 902,
-    "sg": "10a63e47c3a337c129375854161f639d89f50f98999bdfcdd78d72b2807a5cdf",
-    "ct": 1729840344,
-    "ps": "f8732c107a4f86e1g013d29",
-    "pc": "25a324107a4f86e1g014dd4",
-}
+
 # 加密盐
 key = "3c5c8717f3daf09iop3423zafeqoi"
 num = 1
