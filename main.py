@@ -68,7 +68,7 @@ headers = {
 }
 
 # 这是读的书籍信息，挑一本你读过的书
-json_data = {
+data = {
     'appId': 'wb182564874663h1736463455',
     'b': '037427a3643425f447132334e6d334b6532764136716d36703436387233554331a',
     'c': '1f032c402131f0e3dad99f3',
@@ -88,7 +88,7 @@ def get_wr_skey():
         "rq": "%2Fweb%2Fbook%2Fread"
     }
     data = json.dumps(data, separators=(',', ':'))
-    response = requests.post(url, headers=headers, cookies=cookies, data=json_data)
+    response = requests.post(url, headers=headers, cookies=cookies, data=data)
     # print(response.text)
     cookie_str = response.headers['Set-Cookie']
     # print(cookie_str)
