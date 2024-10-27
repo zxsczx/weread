@@ -41,8 +41,8 @@ cookies = {
     'wr_gender': '1',
     'wr_fp': '37437988',
     'wr_avatar': 'https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaEIicG7grpicolv3saJO36e36r9UNU7WrBR3Xw4pTbFwfY9moHGGnRuFibp43Bicv6p81ZfFe1LSkbqj7ib1VKH5icC6cyVD9iaoFUBSweBEO6La9hcAA%2F132',
-    'wr_pf': 'undefined',
-    'wr_skey': '8_qN3Le5',
+    'wr_pf': 'NaN',
+    'wr_skey': 'LhkShKf0',
 }
 
 headers = {
@@ -51,38 +51,35 @@ headers = {
     'Cache-Control': 'no-cache',
     'Connection': 'keep-alive',
     'Content-Type': 'application/json;charset=UTF-8',
-    # 'Cookie': 'pgv_pvid=5940625535; ptcz=1e0f97fd22d3d1e3f650330bddd5b24faf5b89dd151bc6f19fd3adfe3aa2113a; iip=0; qq_domain_video_guid_verify=506b2532a6aa5826; o_cookie=47710; fqm_pvqid=ac8effec-4a17-40b1-8c02-2a2daa50d869; eas_sid=21T6C9U9H8G5J633o2G9P1i211; _qimei_uuid42=17b16071e0410024f298f5541a884a490cd9a3ae65; _qimei_q36=; logTrackKey=fd9872e902d84550b7fbabbcc0f51fcb; pac_uid=0_i0c18kshYiepD; _qimei_fingerprint=5b899aa6b1cfec6e2cb676b662dc0603; _clck=8umwyt|1|fpf|0; suid=user_0_i0c18kshYiepD; _qimei_h38=fded99030d59215a937aea4d02000004d1791a; uin=o47710; _qpsvr_localtk=0.6640695549387141; wr_gid=249875501; wr_vid=281755137; wr_rt=web%40cnNC6deyOvH2CBhwQyz_AL; wr_localvid=4d832b60810cb3e014d8cdd; wr_name=%E9%A9%AC%E5%86%9B; wr_gender=1; wr_fp=37437988; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaEIicG7grpicolv3saJO36e36r9UNU7WrBR3Xw4pTbFwfY9moHGGnRuFibp43Bicv6p81ZfFe1LSkbqj7ib1VKH5icC6cyVD9iaoFUBSweBEO6La9hcAA%2F132; wr_pf=undefined; wr_skey=8_qN3Le5',
+    # 'Cookie': 'pgv_pvid=5940625535; ptcz=1e0f97fd22d3d1e3f650330bddd5b24faf5b89dd151bc6f19fd3adfe3aa2113a; iip=0; qq_domain_video_guid_verify=506b2532a6aa5826; o_cookie=47710; fqm_pvqid=ac8effec-4a17-40b1-8c02-2a2daa50d869; eas_sid=21T6C9U9H8G5J633o2G9P1i211; _qimei_uuid42=17b16071e0410024f298f5541a884a490cd9a3ae65; _qimei_q36=; logTrackKey=fd9872e902d84550b7fbabbcc0f51fcb; pac_uid=0_i0c18kshYiepD; _qimei_fingerprint=5b899aa6b1cfec6e2cb676b662dc0603; _clck=8umwyt|1|fpf|0; suid=user_0_i0c18kshYiepD; _qimei_h38=fded99030d59215a937aea4d02000004d1791a; uin=o47710; _qpsvr_localtk=0.6640695549387141; wr_gid=249875501; wr_vid=281755137; wr_rt=web%40cnNC6deyOvH2CBhwQyz_AL; wr_localvid=4d832b60810cb3e014d8cdd; wr_name=%E9%A9%AC%E5%86%9B; wr_gender=1; wr_fp=37437988; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaEIicG7grpicolv3saJO36e36r9UNU7WrBR3Xw4pTbFwfY9moHGGnRuFibp43Bicv6p81ZfFe1LSkbqj7ib1VKH5icC6cyVD9iaoFUBSweBEO6La9hcAA%2F132; wr_pf=NaN; wr_skey=LhkShKf0',
     'DNT': '1',
     'Origin': 'https://weread.qq.com',
     'Pragma': 'no-cache',
-    'Referer': 'https://weread.qq.com/web/reader/609427c3643425f425a36314a4531484244764f36726936744436416b3158691e4kecc32f3013eccbc87e4b62e',
+    'Referer': 'https://weread.qq.com/web/reader/037427a3643425f447132334e6d334b6532764136716d36703436387233554331a',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-    'baggage': 'sentry-environment=production,sentry-release=dev-1729770851188,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=76c3d75d61254263bfbb7bf38e361345',
+    'baggage': 'sentry-environment=production,sentry-release=dev-1729059353664,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=eecba694221949829358fcd1e65eb4d7',
     'sec-ch-ua': '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
-    'sentry-trace': '76c3d75d61254263bfbb7bf38e361345-ae7835662d87d403',
+    'sentry-trace': 'eecba694221949829358fcd1e65eb4d7-bcfd0914406cb8a3',
 }
 
 # 这是读的书籍信息，挑一本你读过的书
-data = {
-    "appId": "wb182564874663h1736463455",
-    "b": "609427c3643425f425a36314a4531484244764f36726936744436416b3158691e4",
-    "c": "c81322c012c81e728d9d180",
-    "ci": 2,
-    "co": 643,
-    "sm": "图书在版编目（CIP）数据我与地坛／史铁",
-    "pr": 0,
-    "rt": 9,
-    "ts": 1729840344377,
-    "rn": 902,
-    "sg": "10a63e47c3a337c129375854161f639d89f50f98999bdfcdd78d72b2807a5cdf",
-    "ct": 1729840344,
-    "ps": "f8732c107a4f86e1g013d29",
-    "pc": "25a324107a4f86e1g014dd4",
+json_data = {
+    'appId': 'wb182564874663h1736463455',
+    'b': '037427a3643425f447132334e6d334b6532764136716d36703436387233554331a',
+    'c': '1f032c402131f0e3dad99f3',
+    'ci': 19,
+    'co': 3664,
+    'sm': '装帧设计│陆骏璇 封面插画│鸟先森\n内文制作│白咏明 特约印',
+    'pr': 100,
+    'ct': 1730072790,
+    'ps': 'da132c307a4fe1aeg011b14',
+    'pc': '607320d07a4fe1aeg0160b6',
+    's': 'e2d37db9',
 }
 
 def get_wr_skey():
@@ -91,7 +88,7 @@ def get_wr_skey():
         "rq": "%2Fweb%2Fbook%2Fread"
     }
     data = json.dumps(data, separators=(',', ':'))
-    response = requests.post(url, headers=headers, cookies=cookies, data=data)
+    response = requests.post(url, headers=headers, cookies=cookies, data=json_data)
     # print(response.text)
     cookie_str = response.headers['Set-Cookie']
     # print(cookie_str)
