@@ -174,7 +174,7 @@ while True:
         errnum += 1
         num -= 1
 
-    if num == 100:
+    if num == 50:
         print("阅读脚本运行已完成！")
         QLAPI.notify("微信阅读",f"阅读脚本运行已完成！共阅读{ss/60}分钟")
         break
