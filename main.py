@@ -136,10 +136,12 @@ url = "https://weread.qq.com/web/book/read"
 key = "3c5c8717f3daf09iop3423zafeqoi"
 num = 1
 errnum = 0
+t = 0
+ss =0
 
 while True:
     # 处理数据
-    print(f"-------------------第{num}次，共阅读{num * 0.5}分钟-------------------")
+    print(f"-------------------第{num}次，共阅读{ss/60}分钟-------------------")
     data['ct'] = int(time.time())
     data['ts'] = int(time.time() * 1000)
     data['rn'] = random.randint(0, 1000)  # 1000以内的随机整数值
@@ -159,20 +161,22 @@ while True:
         print("数据格式正确，阅读进度有效！")
         # 确认无s字段
         num += 1
-        time.sleep(30)
+        t = random.randint(100, 200)
+        ss= ss +t
+        time.sleep(t)
     else:
         print("数据格式问题,异常退出！")
         cookies['wr_skey'] = get_wr_skey()
         errnum += 1
         num -= 1
 
-    if num == 200:
+    if num == 100:
         print("阅读脚本运行已完成！")
-        QLAPI.notify("微信阅读",f"阅读脚本运行已完成！共阅读{num * 0.5}分钟")
+        QLAPI.notify("微信阅读",f"阅读脚本运行已完成！共阅读{ss/60}分钟")
         break
     elif errnum >3:
         print("阅读脚本运行未正常完成！")
-        QLAPI.notify("微信阅读","阅读脚本运行未正常完成！共阅读{num * 0.5}分钟")
+        QLAPI.notify("微信阅读",f"阅读脚本运行未正常完成！共阅读{ss/60}分钟")
         
         break    
 
